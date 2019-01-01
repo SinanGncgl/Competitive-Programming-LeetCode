@@ -8,7 +8,6 @@ Letters are case sensitive, so "a" is considered a different type of stone from 
 
 from collections import Counter
 
-#O(n) Solution
 
 class Solution:
     def numJewelsInStones(self, J, S):
@@ -22,8 +21,7 @@ class Solution:
         for jewel in J:
             count += count_stone[jewel]
         return count
-        
-# Brute-force O(n^2) Solution
+#2        
 
 class Solution:
     def numJewelsInStones(self, J, S):
