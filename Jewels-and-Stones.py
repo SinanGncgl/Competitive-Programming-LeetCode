@@ -36,3 +36,13 @@ class Solution:
                 if(J[i] == S[j] ):
                     count += 1
         return count
+
+#3
+
+class Solution(object):
+    def numJewelsInStones(self, J, S):
+        counts = 0
+        for c in S:
+            if c in J:
+                counts += 1
+        return counts
