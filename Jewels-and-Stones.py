@@ -39,7 +39,7 @@ class Solution:
 
 #3
 
-class Solution(object):
+class Solution:
     def numJewelsInStones(self, J, S):
         counts = 0
         for c in S:
