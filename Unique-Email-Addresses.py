@@ -32,3 +32,22 @@ class Solution:
         return len(mailL)
         
         
+# 2
+
+class Solution(object):
+    def numUniqueEmails(self, emails):
+        """
+        :type emails: List[str]
+        :rtype: int
+        """
+        if not emails:
+            return 0
+        def valid(email):
+            local,host=email.split('@')
+            local=local.replace('.','')
+            local=local.split('+')[0]
+            return local+'@'+host
+        mailList=set()
+        for email in emails:
+            mailList.add(valid(email))
+        return len(mailList)
