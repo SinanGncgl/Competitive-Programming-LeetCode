@@ -29,3 +29,19 @@ class Solution(object):
             y += 1
             x = x & (x - 1)
         return y
+
+#3
+
+class Solution:
+    def hammingDistance(self, x, y):
+        """
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        ham = 0
+        while x or y:
+            ham += (x % 2) ^ (y % 2)
+            x //= 2
+            y //= 2
+        return ham
