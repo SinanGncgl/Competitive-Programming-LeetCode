@@ -5,7 +5,7 @@ return an array consisting of all the even elements of A, followed by all the od
 You may return any answer array that satisfies this condition.
 """
 
-
+#Recommended
 
 class Solution:
     def sortArrayByParity(self, A):
