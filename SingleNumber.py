@@ -18,3 +18,12 @@ class Solution:
         for i in nums:
             a ^= i
         return a
+
+    
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        return 2 * sum(set(nums)) - sum(nums)
