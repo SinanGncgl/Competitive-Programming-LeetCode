@@ -1,3 +1,3 @@
 # Competitive-Programming
 
-LeetCode Problems
+LeetCode Problems Solutions.
